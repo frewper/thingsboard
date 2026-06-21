@@ -369,6 +369,14 @@ public class RestClient implements Closeable {
         restTemplate.postForLocation(baseURL + "/api/admin/settings/testSms", testSmsRequest);
     }
 
+    public void testapp1(Object test){
+        //this is test1
+    }
+
+    public void testapp2(Object test){
+        //this is test1
+    }
+
     public Optional<SecuritySettings> getSecuritySettings() {
         try {
             ResponseEntity<SecuritySettings> securitySettings = restTemplate.getForEntity(baseURL + "/api/admin/securitySettings", SecuritySettings.class);
@@ -397,6 +405,10 @@ public class RestClient implements Closeable {
                 throw exception;
             }
         }
+    }
+
+    public void testapp3(Object test){
+        //this is test3
     }
 
     public JwtPair saveJwtSettings(JwtSettings jwtSettings) {
@@ -485,6 +497,10 @@ public class RestClient implements Closeable {
                 throw exception;
             }
         }
+    }
+
+    public void testapp4(Object test){
+        //this is test4
     }
 
     public Optional<AlarmInfo> getAlarmInfoById(AlarmId alarmId) {
